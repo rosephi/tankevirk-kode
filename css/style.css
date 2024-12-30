@@ -11,6 +11,7 @@ body {
 nav {
     background-color: white;
     box-shadow: 3px 3px 5px rgba(0,0,0, 0.1);
+    padding: 15px;
 
 }
 
@@ -29,7 +30,7 @@ nav li {
 
 nav a {
     height: 100%;
-    padding: 0 30px;
+    padding: 0 30px;  
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -84,3 +85,45 @@ nav li:first-child {
         width: 100%;
     }
 }
+
+
+.dropdown {
+    position: relative;
+}
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+    padding: 0 1rem;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown-menu:hover {
+    display: block;
+}
+
