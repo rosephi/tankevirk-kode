@@ -127,3 +127,39 @@ nav li:first-child {
     display: block;
 }
 
+/* Sidebar dropdown menu */
+.sidebar .dropdown {
+    position: relative;
+}
+
+/* Dropdown menu hidden by default */
+.sidebar .dropdown-menu {
+    max-height: 0; /* Initially hidden */
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Expand dropdown menu */
+.sidebar .dropdown.open .dropdown-menu {
+    max-height: 200px; /* Adjust to fit the content */
+    transition: max-height 0.3s ease-in-out;
+}
+
+/* Dropdown links */
+.sidebar .dropdown-menu li {
+    padding-left: 10px; /* Indent for better styling */
+}
+
+.sidebar .dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar .dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}

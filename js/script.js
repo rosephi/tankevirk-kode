@@ -27,3 +27,22 @@ if (!dropdownMenu.contains(e.target) && !dropdownLink.contains(e.target)) {
 });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const sidebarDropdownLink = document.getElementById('sidebarDropdownLink');
+    const sidebarDropdown = sidebarDropdownLink.closest('.dropdown');
+
+    // Toggle dropdown on link click
+    sidebarDropdownLink.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent default link behavior
+
+        // Check if the dropdown is open
+        const isOpen = sidebarDropdown.classList.contains('open');
+
+        // Toggle the "open" class
+        if (isOpen) {
+            sidebarDropdown.classList.remove('open');
+        } else {
+            sidebarDropdown.classList.add('open');
+        }
+    });
+});
