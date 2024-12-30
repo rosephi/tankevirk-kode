@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forside</title>
+    <title>Tankevirk</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    
+<nav>
+    <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><img src="img/cross.svg" height="16" viewbox="0 96 960 960" width= "26" alt=""></a></li>
+        <li><a href="#">Om Tankevirk</a></li>
+        <li><a href="#">Vi Tilbyder</a></li>
+        <li><a href="#">Priser</a></li>
+        <li><a href="#">Kontakt</a></li>
+    </ul>
 
-<header>
-    <nav> 
-    <!-- Logo -->
-        <div class="logo">
-            <a href="index.html">
-              <img src="x.png" alt="Tankevirk Logo">
-            </a>
-          </div>
+     <ul>
+        <li><a href="#">Logo</a></li>
+        <li class="hideOnMobile"><a href="#">Om Tankevirk</a></li>
+        <li class="hideOnMobile"><a href="#">Vi Tilbyder</a></li>
+        <li class="hideOnMobile"><a href="#">Priser</a></li>
+        <li class="hideOnMobile"><a href="#">Kontakt</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><img src="img/menu-burger.svg" height="16" viewbox="0 96 960 960" width= "26" alt=""></a></li>
+    </ul>
+</nav>
 
-    <!-- Nav links -->
-        <ul class="nav-links">
-            <li><a href= "ktankevirk.html">Om tankevirk</a></li>
-            <li><a href= "vitilbyder.html">Vi Tilbyder</a></li>
-            <li><a href= "priser.html">Priser</a></li>
-            <li><a href= "kontakt.html">Kontakt</a></li>
-        </ul>
-    </nav>
-</header>
+<script src="js/script.js"></script>
 
 </body>
 </html>
