@@ -129,14 +129,14 @@ nav li:first-child {
     display: block;
 }
 
-/* Sidebar dropdown menu */
+
 .sidebar .dropdown {
     position: relative;
 }
 
-/* Dropdown menu hidden by default */
+
 .sidebar .dropdown-menu {
-    max-height: 0; /* Initially hidden */
+    max-height: 0; 
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
     list-style: none;
@@ -144,15 +144,15 @@ nav li:first-child {
     margin: 0;
 }
 
-/* Expand dropdown menu */
+
 .sidebar .dropdown.open .dropdown-menu {
-    max-height: 200px; /* Adjust to fit the content */
+    max-height: 200px; 
     transition: max-height 0.3s ease-in-out;
 }
 
-/* Dropdown links */
+
 .sidebar .dropdown-menu li {
-    padding-left: 10px; /* Indent for better styling */
+    padding-left: 10px; 
 }
 
 .sidebar .dropdown-menu a {
@@ -166,7 +166,7 @@ nav li:first-child {
     background-color: #f0f0f0;
 }
 
-/* Hero Section Styling */
+
 .hero {
     display: flex;
     justify-content: center;
@@ -337,6 +337,8 @@ nav li:first-child {
         bottom: -50px;
         left: -50px;
     }
+    
+    
 }
 
 
@@ -348,7 +350,7 @@ nav li:first-child {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .highlight-container {
@@ -397,6 +399,58 @@ nav li:first-child {
     margin-top: 10px;
 }
 
+@media (max-width: 768px) {
+    .highlight-section {
+        background-color: #6d90d8; 
+        color: white;
+        padding: 40px 20px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .highlight-container {
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        position: relative;
+    }
+    
+    .highlight-shape {
+        display: none;
+    }
+    
+    .highlight-content {
+        z-index: 10;
+        position: relative;
+        margin-left: 0;
+
+    }
+    
+    .highlight-content h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    .highlight-content ul {
+        list-style: disc;
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .highlight-content ul li {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    .highlight-content p {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+}
 
 .footer {
     max-width: 1200px; 
