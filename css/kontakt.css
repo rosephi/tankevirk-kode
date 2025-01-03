@@ -1,0 +1,109 @@
+.kontakt-title {
+  font-size: 32px;
+}
+
+.kontakt-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  gap: 40px;
+}
+
+.kontakt-section-left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-brødtekst {
+  max-width: 400px;
+}
+
+.kontakt-section-right-column {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: flex-start;
+}
+
+.kontakt-form {
+  background-color: #eee;
+  border-radius: 8px;
+  padding: 32px;
+  width: 400px;
+}
+
+.kontakt-section-div-img {
+  height: 500px;
+  margin-top: 30px;
+}
+
+.kontakt-section-img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.h2 {
+  margin-bottom: 24px;
+}
+
+.form-element {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-element label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-family: "Montserrat", serif;
+  font-size: 14px;
+}
+
+.form-element input,
+textarea {
+  flex: 1;
+  padding: 12px;
+  border-radius: 2px;
+  box-shadow: none;
+  border: none;
+  font-size: 18px;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.form-element select {
+  font-size: 18px;
+  flex: 1;
+  padding: 12px;
+}
+
+.kontakt-mig-btn {
+  width: 100%;
+}
+
+.cert-section {
+  background-color: rgba(90, 132, 203, 30%);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.cert {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cert-title {
+  margin-bottom: 32px;
+  font-size: large;
+}
+
+.cert img {
+  height: 100px;
+}
+
+.footer-kontakt {
+  background-color: rgba(90, 132, 203, 30%);
+  padding-top: 30px;
+}

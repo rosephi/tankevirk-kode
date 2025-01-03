@@ -1,0 +1,66 @@
+.vi-tilbyder-section {
+  display: flex;
+  padding-top: 100px;
+  align-items: center;
+  min-height: 80vh;
+  flex-direction: column;
+  gap: 24px;
+  width: 500px;
+  text-align: center;
+}
+
+.vi-tilbyder-title {
+  font-size: 36px;
+}
+
+.vi-tilbyder-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.samtale-section {
+  background-color: #5a84d0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 60px;
+}
+
+.menu {
+  background-color: white;
+  height: auto;
+  align-self: first baseline;
+  padding: 42px 28px;
+}
+
+.menu h5 {
+  text-transform: uppercase;
+}
+
+.menu a,
+h5 {
+  margin-bottom: 8px;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+.samtale-info {
+  display: flex;
+}
+
+#samtale {
+  margin-bottom: 14px;
+}
+
+.grid-right h2,
+.grid-right p,
+.grid-right li,
+.grid-right h5 {
+  color: white !important;
+}
