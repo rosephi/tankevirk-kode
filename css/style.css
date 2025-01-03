@@ -24,6 +24,7 @@ body {
     border-radius: 0 75px 75px 0;
     text-transform: uppercase;
     padding: 20px;
+    
 }
 
 /*  Terapi */
@@ -168,11 +169,11 @@ a {
     }
 
     .coachingpriser {
-        padding-top: 83px;
+        padding-top: 68px;
     }
 
     .terapipriser {
-        padding-top: 83px;
+        padding-top: 68px;
     }
 
     .priser {
@@ -188,6 +189,20 @@ a {
         border-radius: 0 75px 75px 0;
         text-transform: uppercase;
         padding: 20px;
+    }
+
+    article {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .Afbestilling {
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+
+    .Betaling {
+        padding-top: 25px;
+        padding-bottom: 20px;
     }
 
     a {
