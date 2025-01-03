@@ -84,3 +84,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Start the carousel
     startCarousel();
 });
+
