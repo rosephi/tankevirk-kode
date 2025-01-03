@@ -11,16 +11,19 @@ body {
 
 /*  Priser */
 
-h1 {
-    font-size: 40px;
-    padding-left: 120px;
-    background-color:#5A84D0;
+.priser {
+    height: 100px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
-    max-width: 250px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    border-radius: 0 40px 50% 0;
-    
+    background-color: #5A84D0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 0 75px 75px 0;
+    text-transform: uppercase;
+    padding: 20px;
 }
 
 /*  Terapi */
@@ -32,6 +35,9 @@ ul {
 li {
     padding-bottom: 10px;
     font-size: 18px;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 .Terapi {
@@ -47,7 +53,6 @@ h2 {
 }
 
 article {
-    width: 50%;
     padding-top: 40px;
     padding-bottom: 40px;
     box-sizing: border-box;
@@ -59,6 +64,7 @@ article {
 .terapikategori {
     border-radius: 15px 0 0 15px;
     text-align: left;
+    width: 75%;
 }
 
 .terapikategori li {
@@ -69,6 +75,7 @@ article {
     border-radius: 0 15px 15px 0;
     padding-top: 95px;
     text-align: right;
+    width: 25%;
 }
 
 .terapipriser li {
@@ -76,4 +83,13 @@ article {
 }
 
 
+
+/*  tlf. størrelse */
+
+@media (max-width: 768px) {
+    li {
+      font-size: 16px; 
+    }
+
+}
 
