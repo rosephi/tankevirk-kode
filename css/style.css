@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: arial;
+    background-color: #f9f9f9;
+}
+
+/*  Priser */
+
+
+/*  Terapi */
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.Terapi {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+article {
+    width: 50%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    background-color: #00045A;
+    color: white;
+
+}
+
+.terapikategori {
+    border-radius: 15px 0 0 15px;
+    text-align: left;
+}
+
+.terapikategori li {
+    margin-left: 40px;
+}
+
+.terapipriser {
+    border-radius: 0 15px 15px 0;
+    padding-top: 95px;
+    text-align: right;
+}
+
+.terapipriser li {
+    margin-right: 40px;
+}
+
+
+
