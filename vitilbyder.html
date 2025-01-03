@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tankevirk</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/vitilbyder.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><img
+              src="./img/cross.svg"
+              height="16"
+              viewbox="0 96 960 960"
+              width="26"
+              alt=""
+          /></a>
+        </li>
+        <li><a href="#">Om Tankevirk</a></li>
+        <li class="dropdown">
+          <a href="#" id="sidebarDropdownLink">Vi Tilbyder</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Priser</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#"><img src="./img/tankevirk-logo.svg" height="100" /></a>
+        </li>
+        <li class="hideOnMobile"><a href="#">Om Tankevirk</a></li>
+        <li class="active hideOnMobile dropdown">
+          <a href="#" id="dropdownLink">Vi Tilbyder</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+          </ul>
+        </li>
+        <li class="hideOnMobile"><a href="#">Priser</a></li>
+        <li class="hideOnMobile"><a href="#">Kontakt</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><img
+              src="img/menu-burger.svg"
+              height="16"
+              viewbox="0 96 960 960"
+              width="26"
+              alt=""
+          /></a>
+        </li>
+      </ul>
+    </nav>
+    <section class="vi-tilbyder-section container">
+      <h1 class="vi-tilbyder-title">
+        Hvordan kan<br />
+        Tankevirke hjælpe dig?
+      </h1>
+      <h5 class="vi-tilbyder-description">
+        Føler du dig mere stresset end normalt, har du problemer med din
+        selvtillig/selværd eller føler du sorg? Så kan terapi være noget for
+        dig. Jeg udbyder forskellige former for terapi alt efter hvilke behov du
+        som person har.
+      </h5>
+      <a href="#samtale"" class="btn-secondary">Se hvad jeg kan tilbyde ↓</a>
+    </section>
+    <section class="samtale-section">
+      <div class="container">
+        <div class="grid">
+          <div class="grid-left">
+            <div class="menu">
+              <h5>Private</h5>
+              <a href="#samtale">Samtale terapi</a>
+              <a href="#psyko">Psykoterapi</a>
+              <a href="#hypnose">Hypnose</a>
+              <br />
+              <br />
+              <h5>Virksomheder</h5>
+              <a href="#coaching">Coaching</a>
+              <a href="#kurser">Kurser i kommunikation</a>
+            </div>
+          </div>
+          <div class="grid-right">
+            <h2 id="samtale">Samtale terapi</h2>
+            <div class="samtale-info">
+              <p>
+                Vi kan alle være i en livsfase, hvor de udfordringer vi står
+                overfor er blevet så store, at de virker uoverskuelige. I disse
+                situationer kan det være, at du har brug for støtte og omsorg i
+                en periode, og og her kan en professionel samtalepartner være en
+                mulighed.
+              </p>
+              <img src="img/client.png" style="height: 180px" />
+            </div>
+            <h5>Hvad kan samtale terapi hjælpe med:</h5>
+            <ul>
+              <li>Selvtillid/selvværd</li>
+              <li>Samlivsproblemer – par – familien – børn eller forældre</li>
+              <li>Depression</li>
+              <li>Angst</li>
+              <li>Præstationsangst – eksamensangst</li>
+              <li>Trauma</li>
+              <li>
+                Fobier for f.eks: edderkopper, højdeskræk eller klaustrofobi
+              </li>
+              <li>Mobning</li>
+              <li>Vægt – eks. anoreksi, bulimi eller overvægt</li>
+              <li>
+                Værdier – på alle livets områder, eksempelvis i
+                kærlighedsforhold, arbejdsliv eller familieliv
+              </li>
+              <li>Livet føles meningsløst</li>
+              <li>Udbrændthed</li>
+              <li>Stress</li>
+              <li>Sorg</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Firma Information -->
+        <div class="footer-section" aria-labelledby="firma-info-heading">
+          <h2 id="firma-info-heading">Firmainformation</h2>
+          <p>
+            Tankevirk V/ Hanne Aamand<br />
+            Dronningensvej 7, 1. TH<br />
+            5800 Nyborg<br />
+            Tlf.:
+            <a href="tel:+4527286099" aria-label="Ring til 27 28 60 99"
+              >27 28 60 99</a
+            ><br />
+            E-mail:
+            <a href="mailto:info@tankevirk.dk" aria-label="Send en mail"
+              >Skriv en mail til mig</a
+            >
+          </p>
+        </div>
+
+        <!-- Hurtige Links -->
+        <div class="footer-section" aria-labelledby="hurtige-links-heading">
+          <h2 id="hurtige-links-heading">Hurtige links</h2>
+          <ul>
+            <li><a href="#" aria-label="Coaching">Coaching</a></li>
+            <li>
+              <a href="#" aria-label="Coaching i virksomheder"
+                >Coaching i virksomheder</a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="Det siger kunderne">Det siger kunderne</a>
+            </li>
+            <li><a href="#" aria-label="GDPR">GDPR</a></li>
+            <li><a href="#" aria-label="Kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="footer-section social-media" aria-label="Sociale medier">
+          <a href="#" aria-label="Instagram"
+            ><img src="img/instagram.svg"Instagram"></a
+          >
+          <a href="#" aria-label="Facebook"
+            ><img src="img/facebook.svg" alt="Facebook"
+          /></a>
+          <a href="#" aria-label="LinkedIn"
+            ><img src="img/linkedin.svg" alt="LinkedIn"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
