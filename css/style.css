@@ -452,6 +452,234 @@ nav li:first-child {
     }
 }
 
+
+.cards-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    flex-wrap: wrap; 
+}
+
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    max-width: 300px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.card-button {
+    background-color: #a64b38;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #893f31;
+}
+
+/* Carousel Section Styling */
+.carousel-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Carousel Container */
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Individual Cards */
+.carousel-card {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.carousel-card.active {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    transform: translateX(0);
+}
+
+/* Card Image */
+.carousel-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Card Title */
+.carousel-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    padding: 20px 0;
+}
+
+/* Navigation Dots */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #333; /* Active dot color */
+}
+
+/* General Section Styling */
+.mission-vision-values {
+    padding: 40px 0; /* Remove horizontal padding */
+    background-color: #f9f9f9;
+    position: relative; /* Needed for absolutely positioned shapes */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+    flex-wrap: nowrap; /* Keep row layout for desktop */
+    align-items: center;
+    position: relative; /* Shapes are positioned relative to this */
+    overflow: hidden; /* Ensure shapes don't overflow their row */
+}
+
+/* Blocks */
+.block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    gap: 20px;
+}
+
+/* Block Shape Styling */
+.block-shape {
+    flex: 0 0 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 0 75px 75px 0; 
+    text-transform: uppercase;
+    padding: 20px;
+
+}
+
+.block-shape-right {
+    border-radius: 75px 0 0 75px; 
+}
+
+/* Content Styling */
+.block-content {
+    flex: 1;
+    padding: 20px;
+    background-color: transparent;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.block-content p {
+    margin: 0;
+}
+
+.block-content ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.block-content ul li {
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Stack everything vertically */
+    }
+
+    .block-content {
+        display: flex;
+        flex-direction: column; /* Ensure vertical stacking within block content */
+    }
+
+    .block-content h2 {
+        order: -1; /* Place the h2 above the ul or p content */
+        text-align: center; /* Center the heading */
+        margin-bottom: 10px; /* Add spacing below the heading */
+    }
+
+    .block-content ul,
+    .block-content p {
+        order: 0; /* Ensure content remains below h2 */
+    }
+
+  }
+
+
+
 .footer {
     max-width: 1200px; 
     margin: 0 auto;    

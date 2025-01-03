@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 dropdownLink.addEventListener('click', (e) => {
-    e.preventDefault(); // Prevent default link behavior
+    e.preventDefault(); 
      const isVisible = dropdownMenu.style.display === 'block';
      dropdownMenu.style.display = isVisible ? 'none' : 'block';
 });
@@ -45,4 +45,42 @@ document.addEventListener('DOMContentLoaded', () => {
             sidebarDropdown.classList.add('open');
         }
     });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.carousel-card');
+    const dots = document.querySelectorAll('.dot');
+    let currentIndex = 0;
+    const delay = 5000; 
+
+    // Function to show a specific card
+    function showCard(index) {
+        cards.forEach((card, i) => {
+            card.classList.remove('active');
+            dots[i].classList.remove('active');
+            if (i === index) {
+                card.classList.add('active');
+                dots[i].classList.add('active');
+            }
+        });
+        currentIndex = index;
+    }
+
+    // Automatically switch cards
+    function startCarousel() {
+        setInterval(() => {
+            let nextIndex = (currentIndex + 1) % cards.length;
+            showCard(nextIndex);
+        }, delay);
+    }
+
+    // Dot click event
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            showCard(index);
+        });
+    });
+
+    // Start the carousel
+    startCarousel();
 });
