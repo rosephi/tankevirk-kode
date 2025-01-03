@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tankevirk</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/kontakt.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -52,7 +53,7 @@
           </ul>
         </li>
         <li class="hideOnMobile"><a href="#">Priser</a></li>
-        <li class="hideOnMobile"><a href="#">Kontakt</a></li>
+        <li class="hideOnMobile active"><a href="#">Kontakt</a></li>
         <li class="menu-button" onclick="showSidebar()">
           <a href="#"
             ><img
@@ -66,66 +67,67 @@
       </ul>
     </nav>
 
-    <section class="hero" aria-labelledby="hero-heading">
-      <div class="hero-content">
-        <div class="hero-text" aria-label="Hero section text content">
-          <h1 id="hero-heading">Find ro og refleksion</h1>
-          <p>
-            <strong>Hvorfor er selvindsigt vigtigt?</strong><br />
-            Selvindsigt er nøglen til at forstå dine følelser og mønstre. Ved at
-            arbejde med en terapeut kan du opnå en dybere forståelse af dig selv
-            og dine relationer. Sammen kan vi skabe en tryg ramme for din
-            personlige udvikling.
-          </p>
-          <p>
-            <strong>Hvordan kan jeg hjælpe?</strong><br />
-            Jeg tilbyder støtte og værktøjer, der hjælper dig med at håndtere
-            livets udfordringer, forbedre dine relationer og finde større
-            balance.
-          </p>
-          <p>
-            <strong>Hvem er jeg?</strong><br />
-            Med mange års erfaring inden for terapi brænder jeg for at skabe et
-            trygt og støttende rum, hvor du kan udforske de ting, der betyder
-            mest for dig.
-          </p>
-
-          <div class="hero-buttons">
-            <a href="#" class="btn-primary" aria-label="Kontakt">Kontakt</a>
-            <a href="#" class="btn-secondary" aria-label="Læs mere">Læs mere</a>
-          </div>
+    <section class="kontakt-section container">
+      <div class="kontakt-section-left-column">
+        <h1 class="kontakt-title">Nysgerrig omkring et forløb?</h1>
+        <p class="left-brødtekst">
+          ...eller har du andre spørgsmål? Send mig en besked hvis du vil booke
+          en session hos mig eller blot ønsker at vide mere.
+        </p>
+        <p class="left-brødtekst">
+          Du vil modtage svar på din anmodning indenfor et døgn.
+        </p>
+        <div class="kontakt-section-div-img" aria-label="Hanne Aamand">
+          <img
+            class="kontakt-section-img"
+            src="img/hanne1.svg"
+            alt="Hanne Aamand"
+            class="hero-image"
+          />
         </div>
-
-        <div class="hero-image-container" aria-label="Hero image and quote">
-          <img src="img/hanne1.svg" alt="Hanne Aamand" class="hero-image" />
-          <div class="hero-quote" aria-label="Hero quote">
-            <p>
-              "Jeg tilbyder et ‘rum’, hvor vi i al fortrolighed kan udforske
-              det, du er optaget af her og nu."
-            </p>
-          </div>
+      </div>
+      <div class="kontakt-section-right-column">
+        <div class="kontakt-form">
+          <h2 class="h2">Skriv til mig!</h2>
+          <form>
+            <div class="form-element">
+              <label for="email">Email</label>
+              <input id="email" type="email" />
+            </div>
+            <div class="form-element">
+              <label for="type">Emne</label>
+              <select id="type">
+                <option>Individuel terapi</option>
+                <option>Hypnose</option>
+                <option>NLP</option>
+                <option>Virksomhed</option>
+                <option>Kurser</option>
+                <option>Andet</option>
+              </select>
+            </div>
+            <div class="form-element">
+              <label for="description">Description</label>
+              <textarea id="description" rows="5"></textarea>
+            </div>
+            <button class="btn-secondary kontakt-mig-btn" type="submit">
+              Kontakt mig
+            </button>
+          </form>
         </div>
       </div>
     </section>
-
-    <section class="highlight-section" aria-labelledby="highlight-heading">
-      <div class="highlight-container">
-        <div class="highlight-shape"></div>
-        <div class="highlight-content">
-          <h2 id="highlight-heading">Lyder dette som dig?</h2>
-          <ul>
-            <li>
-              <strong>Vejet ned af angst, udbrændelse eller stress</strong>
-            </li>
-            <li><strong>Øget tillidsproblemer og lavt selvtillid</strong></li>
-          </ul>
-          <p>Lad os tage en snak om det!</p>
+    <section class="cert-section">
+      <div class="container">
+        <h4 class="cert-title">Certifikater & Foreninger</h4>
+        <div class="cert">
+          <img src="./img/cert1.png" />
+          <img src="./img/cert2.png" />
+          <img src="./img/cert3.png" />
         </div>
       </div>
     </section>
-
-    <footer class="footer">
-      <div class="footer-container">
+    <footer class="footer-kontakt">
+      <div class="footer-container container">
         <!-- Firma Information -->
         <div class="footer-section" aria-labelledby="firma-info-heading">
           <h2 id="firma-info-heading">Firmainformation</h2>
