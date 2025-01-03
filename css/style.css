@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Section Titles */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* About Section */
+.about {
+    margin-bottom: 3rem;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Experience Section */
+.experience {
+    margin-bottom: 3rem;
+}
+
+.experience p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.experience-image {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.experience-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Logos Section */
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.logos img {
+    max-width: 80px;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .logos {
+        flex-direction: column;
+    }
+}

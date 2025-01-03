@@ -3,9 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tankevirk</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+<nav>
+    <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><img src="img/cross.svg" height="16" viewbox="0 96 960 960" width= "26" alt=""></a></li>
+        <li><a href="#">Om Tankevirk</a></li>
+        <li class="dropdown">
+            <a href="#" id="sidebarDropdownLink">Vi Tilbyder</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li><a href="#">Option 3</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Priser</a></li>
+        <li><a href="#">Kontakt</a></li>
+    </ul>
+
+     <ul>
+        <li><a href="#"><img src="img/tankevirk-logo.svg" height="100" ></a></li>
+        <li class="hideOnMobile"><a href="#">Om Tankevirk</a></li>
+        <li class="hideOnMobile dropdown">
+            <a href="#" id="dropdownLink">Vi Tilbyder</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li><a href="#">Option 3</a></li>
+            </ul>
+        </li>
+        <li class="hideOnMobile"><a href="#">Priser</a></li>
+        <li class="hideOnMobile"><a href="#">Kontakt</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><img src="img/menu-burger.svg" height="16" viewbox="0 96 960 960" width= "26" alt=""></a></li>
+    </ul>
+</nav>
+
+<main>
+    <!-- Om Tankevirk Section -->
+    <section class="about">
+        <h1>Om Tankevirk</h1>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    Min store interesse er selvudvikling og kommunikation. Denne passion opdagede jeg i 1996, hvor jeg første gang fik kendskab til NLP.
+                </p>
+                <p>
+                    Jeg fandt ud af, at man via de rigtige spørgsmål får mulighed for at løse den problematik, man har.
+                </p>
+                <p>
+                    Jeg har 20 års erfaring i at arbejde med mennesker og har desuden været frivillig Coach i LMS (Landsforeningen mod spiseforstyrrelser og selvskade) i 3 år.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="img/about.jpg" alt="Billede af Tankevirk terapeut">
+            </div>
+        </div>
+    </section>
+
+    <!-- Min Erfaring Section -->
+    <section class="experience">
+        <h2>Min erfaring</h2>
+        <p>
+            Jeg har en solid baggrund inden for psykoterapi, coaching og kommunikation og har gennem årene opbygget en bred faglig ekspertise.
+        </p>
+        <p>
+            Jeg har specialiseret mig i Systemisk Familieopstilling og Generativ Trance Work, hvor jeg har gennemført grundlæggende, mellemliggende og avancerede træningsforløb med Stephen G. Gilligan, ph.D.
+        </p>
+        <p>
+            Som supervisor og med en baggrund som social- og sundhedsassistent kombinerer jeg mine faglige kompetencer med en dyb forståelse for både psykologiske og praktiske aspekter af terapi og personlig udvikling.
+        </p>
+        <div class="experience-image">
+            <img src="img/therapy-session.jpg" alt="Terapi session">
+        </div>
+        <div class="logos">
+            <img src="img/logo-psykoterapeut.png" alt="Dansk Psykoterapeut Forening Logo">
+            <img src="img/logo-ngh.png" alt="NGH Logo">
+            <img src="img/logo-tre.png" alt="TRE Logo">
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Firma Information -->
+        <div class="footer-section" aria-labelledby="firma-info-heading">
+            <h2 id="firma-info-heading">Firmainformation</h2>
+            <p>
+                Tankevirk V/ Hanne Aamand<br>
+                Dronningensvej 7, 1. TH<br>
+                5800 Nyborg<br>
+                Tlf.: <a href="tel:+4527286099" aria-label="Ring til 27 28 60 99">27 28 60 99</a><br>
+                E-mail: <a href="mailto:info@tankevirk.dk" aria-label="Send en mail">Skriv en mail til mig</a>
+            </p>
+        </div>
+
+        <!-- Hurtige Links -->
+        <div class="footer-section" aria-labelledby="hurtige-links-heading">
+            <h2 id="hurtige-links-heading">Hurtige links</h2>
+            <ul>
+                <li><a href="#" aria-label="Coaching">Coaching</a></li>
+                <li><a href="#" aria-label="Coaching i virksomheder">Coaching i virksomheder</a></li>
+                <li><a href="#" aria-label="Det siger kunderne">Det siger kunderne</a></li>
+                <li><a href="#" aria-label="GDPR">GDPR</a></li>
+                <li><a href="#" aria-label="Kontakt">Kontakt</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="footer-section social-media" aria-label="Sociale medier">
+            <a href="#" aria-label="Instagram"><img src="img/instagram.svg"Instagram"></a>
+            <a href="#" aria-label="Facebook"><img src="img/facebook.svg" alt="Facebook"></a>
+            <a href="#" aria-label="LinkedIn"><img src="img/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
