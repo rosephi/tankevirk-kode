@@ -274,6 +274,7 @@ nav li:first-child {
     align-items: center; 
     justify-content: center; 
     font-size: 0.95rem;
+    font-style: italic;
     line-height: 1.4;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
@@ -333,7 +334,7 @@ nav li:first-child {
         margin: 50px auto 0;
         width: 140px;
         height: 140px;
-        font-size: 0.9rem;
+        font-size: 0.67rem;
         line-height: 1.2;
         bottom: -50px;
         left: -50px;
@@ -479,12 +480,17 @@ nav li:first-child {
 }
 
 .card-image {
+    height: 100%;
     width: 100%;
-    height: auto;
+    object-fit: cover;
     border-radius: 10px;
     margin-bottom: 15px;
 }
-
+.card-image {
+    position: relative;
+    height: 300px;
+    width: 400px;
+}
 .card-description {
     font-size: 1rem;
     line-height: 1.6;
@@ -551,17 +557,34 @@ nav li:first-child {
     width: 100%;
     height: auto;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 /* Card Title */
 .carousel-title {
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 30px !important;
+    font-weight: lighter;
     color: #333;
     padding: 20px 0;
     margin-top: -30px;
 }
-
+.carousel-button {
+    display: inline-block;
+    padding: 8px 16px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-top: -20px;
+    background-color: #a64b38;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  .carousel-button:hover {
+    background-color: #974435;
+  }
 /* Navigation Dots */
 .carousel-dots {
     display: flex;
@@ -602,6 +625,56 @@ nav li:first-child {
     overflow: hidden; /* Ensure shapes don't overflow their row */
 }
 
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.carousel-card {
+    min-width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.carousel-card img {
+    height: 300px;
+    max-width: 1200;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.carousel-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.carousel-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .carousel-card {
+        min-width: 100%; 
+    }
+
+}
+
 /* Blocks */
 .block {
     display: flex;
@@ -625,11 +698,13 @@ nav li:first-child {
     border-radius: 0 75px 75px 0; 
     text-transform: uppercase;
     padding: 20px;
+    padding-right: 400px;
 
 }
 
 .block-shape-right {
     border-radius: 75px 0 0 75px; 
+    padding-left: 100px;
 }
 
 /* Content Styling */
@@ -659,119 +734,47 @@ nav li:first-child {
 
 @media (max-width: 768px) {
     .row {
-        flex-direction: column; /* Stack everything vertically */
+        flex-direction: column; 
     }
 
     .block-content {
         display: flex;
-        flex-direction: column; /* Ensure vertical stacking within block content */
+        flex-direction: column; 
     }
 
     .block-content h2 {
-        order: -1; /* Place the h2 above the ul or p content */
-        text-align: center; /* Center the heading */
-        margin-bottom: 10px; /* Add spacing below the heading */
+        order: -1; 
+        text-align: center; 
+        margin-bottom: 10px;
     }
 
     .block-content ul,
     .block-content p {
-        order: 0; /* Ensure content remains below h2 */
+        order: 0; 
     }
 
   }
 
-
-.carousel-title {
-    font-size: 16px;
-    margin-bottom: -20px;
-}
-
-.carousel-container {
-    position: relative;
-    overflow: hidden;
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.carousel-track {
-    display: flex;
-    transition: transform 0.5s ease;
-    width: 100%;
-}
-
-.carousel-card {
-    min-width: 100%;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
-    border-radius: 10px;
-    text-align: center;
-}
-
-.carousel-card img {
-    height: 300px;
-    max-width: 1200;
-    object-fit: cover;
-    margin-bottom: 15px;
-}
-
-.carousel-card h3 {
-    font-size: 1.2rem;
-    margin: 10px 0;
-}
-
-.carousel-card p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #333;
-}
-
-/* Arrows */
-.carousel-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-}
-
-.carousel-arrow:hover {
-    background-color: #555;
-}
-
-.left-arrow {
-    left: 10px;
-}
-
-.right-arrow {
-    right: 10px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .carousel-card {
-        min-width: 100%; /* Show one card at a time */
+  @media (max-width: 768px) {
+    .block-shape {
+        padding-right: 10px;
+        font-size: 1.1rem;
     }
-
-    .carousel-arrow {
-        width: 35px;
-        height: 35px;
-        font-size: 1.2rem;
+    .block-shape-right {
+        padding-left: 10px;
     }
-}
+  
+  }
+
+  @media (max-width: 1299px) {
+    .block-shape {
+        padding-right: 100px;
+    }
+    .block-shape-right {
+        padding-left: 50px;
+    }
+  
+  }
 
 .custom-carousel-container {
     min-height: 100vh;
