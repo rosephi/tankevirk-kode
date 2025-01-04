@@ -172,18 +172,19 @@ nav li:first-child {
 /*  Priser */
 
 .priser {
-    height: 100px;
-    width: 40%;
+    height: 80px;
+    width: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     background-color: #5A84D0;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold;
     border-radius: 0 75px 75px 0;
     text-transform: uppercase;
     padding: 20px;
+    margin-top: 30px;
 }
 
 /*  Terapi */
