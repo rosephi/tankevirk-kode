@@ -559,6 +559,7 @@ nav li:first-child {
     font-weight: bold;
     color: #333;
     padding: 20px 0;
+    margin-top: -30px;
 }
 
 /* Navigation Dots */
@@ -566,13 +567,13 @@ nav li:first-child {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: -10px;
     gap: 10px;
 }
 
 .dot {
-    width: 12px;
-    height: 12px;
+    width: 8px;
+    height: 8px;
     background-color: #ccc;
     border-radius: 50%;
     transition: background-color 0.3s ease;
@@ -679,16 +680,10 @@ nav li:first-child {
 
   }
 
-/* General Carousel Styling */
-.review-carousel {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-}
 
 .carousel-title {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+    font-size: 16px;
+    margin-bottom: -20px;
 }
 
 .carousel-container {
@@ -698,6 +693,7 @@ nav li:first-child {
     margin: 0 auto;
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 
 .carousel-track {
@@ -710,15 +706,14 @@ nav li:first-child {
     min-width: 100%;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f5f5dc;
+    
     border-radius: 10px;
     text-align: center;
 }
 
 .carousel-card img {
-    border-radius: 50%;
-    height: 80px;
-    width: 80px;
+    height: 300px;
+    max-width: 1200;
     object-fit: cover;
     margin-bottom: 15px;
 }
@@ -830,21 +825,7 @@ nav li:first-child {
     border-radius: 25px 25px 0 25px;
   }
   
-.custom-overlay::before,
-.custom-overlay::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  bottom: -40px;
-  height: 40px;
-  width: 40px;
-  background-color: #893f31;
-}
 
-.custom-overlay::after {
-    border-radius: 0 25px 0 0;
-    background-color: #FFF;
-  }
   .custom-card-image {
     position: relative;
     height: 150px;

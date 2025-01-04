@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.carousel-card');
     const dots = document.querySelectorAll('.dot');
     let currentIndex = 0;
-    const delay = 5000; 
+    const delay = 9000; 
 
     // Function to show a specific card
     function showCard(index) {
