@@ -107,3 +107,29 @@ textarea {
   background-color: rgba(90, 132, 203, 30%);
   padding-top: 30px;
 }
+
+@media screen and (max-width: 600px) {
+  .kontakt-section {
+    grid-template-columns: 1fr;
+    padding: 0px 20px;
+    text-align: center;
+  }
+  .kontakt-section label {
+    text-align: left;
+  }
+  .kontakt-form {
+    width: 100%;
+  }
+  .cert {
+    flex-wrap: wrap;
+    padding: 0 20px;
+    gap: 20px;
+  }
+  .cert img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .cert-title {
+    text-align: center;
+  }
+}
