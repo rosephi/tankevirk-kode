@@ -169,7 +169,6 @@ nav li:first-child {
 }
 
 
-
 /*  Priser */
 
 .priser {
@@ -185,7 +184,6 @@ nav li:first-child {
     border-radius: 0 75px 75px 0;
     text-transform: uppercase;
     padding: 20px;
-    
 }
 
 /*  Terapi */
@@ -210,14 +208,13 @@ ul {
     padding-top: 5px;
 }
 
-
 .Terapi {
     display: flex;
     justify-content: space-between;
     margin: 30px;
 }
 
-h2 {
+ main h2 {
     font-size: 30px;
     margin-bottom: 20px;
     margin-left: 30px;
@@ -328,15 +325,23 @@ p {
 /*  tlf. størrelse */
 
 @media (max-width: 768px) {
-    li {
+    .Terapi li {
       font-size: 10px; 
     }
 
-    h2 {
+    .coaching li {
+        font-size: 10px; 
+      }
+
+    .Terapi h2 {
         font-size: 20px;
     }
 
-    p {
+    .coaching h2 {
+        font-size: 20px;
+    }
+
+    main p {
         font-size:10px;
     }
 
