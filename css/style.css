@@ -5,12 +5,12 @@
 }
 
 body {
-    min-height: 100vh;
     font-family: arial;
+    background-color: dddddd;
+    font-family: Lexend Exa, sans-serif;
 }
 
 nav {
-    background-color: white;
     box-shadow: 3px 3px 5px rgba(0,0,0, 0.1);
     padding: 15px;
 
@@ -73,20 +73,6 @@ nav li:first-child {
 .menu-button {
     display: none;
 }
-@media(max-width: 800px) {
-    .hideOnMobile{
-        display: none;
-    }
-    .menu-button{
-        display: block;
-    }
-}
-@media(max-width: 400px){
-    .sidebar{
-        width: 100%;
-    }
-}
-
 
 .dropdown {
     position: relative;
@@ -245,5 +231,19 @@ h1, h2 {
 
     .logos {
         flex-direction: column;
+    }
+}
+
+@media(max-width: 800px) {
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
     }
 }
