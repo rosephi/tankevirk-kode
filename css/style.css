@@ -194,13 +194,22 @@ ul {
     list-style-type: none;
 }
 
-li {
+.Terapi li {
     padding-bottom: 10px;
     font-size: 18px;
     border-bottom: 1px solid white;
     padding-bottom: 5px;
     padding-top: 5px;
 }
+
+.coaching li {
+    padding-bottom: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
 
 .Terapi {
     display: flex;
@@ -306,11 +315,13 @@ p {
     align-items: center;
     margin-left: 35%;
     margin-right: 35%;
+    margin-bottom: 70px;
     height: 90px;
     font-size: 2rem;
     text-decoration: none;
     border-radius: 15px;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+
 }
 
 
