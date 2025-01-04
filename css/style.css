@@ -137,7 +137,7 @@ p {
     padding-bottom: 40px;  
 }
 
-a {
+.bestiltid a {
     color: white;
     background-color: #5A84D0;
     display: flex;
@@ -205,7 +205,7 @@ a {
         padding-bottom: 20px;
     }
 
-    a {
+    .bestiltid a {
         font-size: 1.2rem;
         height: 60px;
     }

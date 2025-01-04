@@ -7,9 +7,38 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-    /*indsæt fra patricia main */
-    </header>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><img src="img/cross.svg" height="16" viewbox="0 96 960 960" width= "26" alt=""></a></li>
+            <li><a href="#">Om Tankevirk</a></li>
+            <li class="dropdown">
+                <a href="#" id="sidebarDropdownLink">Vi Tilbyder</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Priser</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    
+         <ul>
+            <li><a href="#"><img src="img/tankevirk-logo.svg" height="100" ></a></li>
+            <li class="hideOnMobile"><a href="#">Om Tankevirk</a></li>
+            <li class="hideOnMobile dropdown">
+                <a href="#" id="dropdownLink">Vi Tilbyder</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                </ul>
+            </li>
+            <li class="hideOnMobile"><a href="#">Priser</a></li>
+            <li class="hideOnMobile"><a href="#">Kontakt</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><img src="img/menu-burger.svg" height="16" viewbox="0 96 960 960" width= "26" alt=""></a></li>
+        </ul>
+    </nav>
     
     <main>
 
@@ -75,9 +104,9 @@
             <p>Der modtages kontant betaling eller betaling via Mobile Pay 27 28 60 99</p>
         </div>
 
-        
+        <div class="bestiltid"> 
         <a href="#">Bestil tid</a>
-        
+        </div>
     </main>
 
     <footer>
