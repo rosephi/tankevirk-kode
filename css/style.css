@@ -25,8 +25,9 @@ h6 {
 p {
   font-family: "Lexend Exa", serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 300;
   font-style: normal;
+  font-size: 14px;
 }
 
 .container {
@@ -67,7 +68,7 @@ nav li.active {
   border-radius: 25px;
 }
 
-nav li.active a {
+nav li.active > a {
   color: white;
 }
 
