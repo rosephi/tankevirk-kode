@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tankevirk</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/kurser.css" />
+    <link rel="stylesheet" href="css/kontakt.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><img
+              src="./img/cross.svg"
+              height="16"
+              viewbox="0 96 960 960"
+              width="26"
+              alt=""
+          /></a>
+        </li>
+        <li><a href="#">Om Tankevirk</a></li>
+        <li class="dropdown">
+          <a href="/vitilbyder.html" id="sidebarDropdownLink">Vi Tilbyder</a>
+          <ul class="dropdown-menu">
+            <li><a href="/vitilbyder.html#samtale">Samtale</a></li>
+            <li><a href="/vitilbyder.html#psyko">Psykoterapi</a></li>
+            <li><a href="/vitilbyder.html#hypnose">Hypnose</a></li>
+            <li><a href="/coaching.html">Coaching</a></li>
+            <li><a href="/kurser.html">Kurser</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Priser</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+      <ul>
+        <li>
+          <a href="/index.html"
+            ><img src="./img/tankevirk-logo.svg" height="100"
+          /></a>
+        </li>
+        <li class="hideOnMobile"><a href="#">Om Tankevirk</a></li>
+        <li class="active hideOnMobile dropdown">
+          <a href="/vitilbyder.html" id="dropdownLink">Vi Tilbyder</a>
+          <ul class="dropdown-menu">
+            <li><a href="/vitilbyder.html#samtale">Samtale</a></li>
+            <li><a href="/vitilbyder.html#psyko">Psykoterapi</a></li>
+            <li><a href="/vitilbyder.html#hypnose">Hypnose</a></li>
+            <li><a href="/coaching.html">Coaching</a></li>
+            <li><a href="/kurser.html">Kurser</a></li>
+          </ul>
+        </li>
+        <li class="hideOnMobile"><a href="#">Priser</a></li>
+        <li class="hideOnMobile"><a href="/kontakt.html">Kontakt</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><img
+              src="img/menu-burger.svg"
+              height="16"
+              viewbox="0 96 960 960"
+              width="26"
+              alt=""
+          /></a>
+        </li>
+      </ul>
+    </nav>
+    <section class="container">
+      <div class="kurser-header">
+        <h1 class="kurser-title">Kurser</h1>
+        <h5 class="kurser-subtitle">Aktiveringsparatheds kursus</h5>
+      </div>
+      <p>
+        Er du på kontanthjælp, syge-dagpenge, i ressourceforløb og klar til at
+        komme i aktivering, men syntes alligevel ikke rigtigt at du er helt
+        parat.
+      </p>
+      <br />
+      <p>
+        Så kan kurset “Aktiveringsparat – for mennesker der behøver mere tid”,
+        måske være det næste skridt mod en praktikplads, uddannelse eller
+        arbejdsmarkedet. Dette er et helorienteret forløb stillet mod
+        arbejdsmarkedet for aktivitetsparate borgere.
+      </p>
+      <br />
+      <br />
+      <div class="two-col-grid">
+        <div>
+          <h5>Kurset har fokus på</h5>
+          <ul>
+            <li>Hvordan er din nuværende situation?</li>
+            <li>
+              Hvad er dit mål for arbejdsmarkedet, job, uddannelse eller
+              praktik?
+            </li>
+            <li>Hvordan kommer du i mål?</li>
+            <li>Hvad motiverer dig?</li>
+            <li>Hvad er dine personlige og faglige kompetencer?</li>
+            <li>Hvilken ressourcer mangler du?</li>
+          </ul>
+        </div>
+        <div>
+          <h5>Du opnår indsigt og får nye værktøjer til at:</h5>
+          <ul>
+            <li>
+              Hjælp til at tage de skridt der hjælper dig videre i dit forløb.
+            </li>
+            <li>Indsigt i egne problematikker.</li>
+            <li>
+              Indsigt og redskaber til at komme i uddannelse, praktik eller ud
+              på arbejdsmarkedet.
+            </li>
+            <li>Lært at udarbejde en realistisk handlingsplan.</li>
+            <li>Hjælp og støtte til at nå de forgangne mål.</li>
+          </ul>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="hanne-kurser-img">
+        <img src="./img/hanne-kurser.jpeg" />
+      </div>
+    </section>
+    <br />
+    <br />
+    <section class="container">
+      <h5 class="text-center">Kursus "Bliv ven med din angst"</h5>
+      <br />
+      <p>
+        Som noget nyt tilbyder Tankvirk et 12 ugers terapeutisk kursusforløb til
+        mennesker med angstproblematikker.
+      </p>
+      <br />
+      <p>
+        Cirka 20 % af den danske befolkning vil i løbet af et år have problemer
+        med mental sundhed (kilde: Folkesundhedsrapporten Danmark”, 2007,
+        Statens Institut for Folkesundhed) hvilket svare til 700.000-800.000
+        voksne danskere, ud af den lider cirka 350.000 mennesker af en eller
+        anden form for angst og oplever at det giver dem problemer i deres
+        hverdag.
+      </p>
+      <br />
+      <p>
+        Er du en af dem og vil du gerne kunne leve med et naturligt forhold til
+        angst? Vil du være ven med din angst?
+      </p>
+
+      <br />
+      <br />
+      <div class="two-col-grid">
+        <div>
+          <h5>
+            Kurset henvender sig til dig som har oplevet eller som oplever:
+          </h5>
+          <ul>
+            <li>Panikangst</li>
+            <li>Angstanfald</li>
+            <li>Social fobi</li>
+            <li>OCD</li>
+            <li>Som har udviklet fobiske reaktioner og undgåelsesadfærd.</li>
+            <li>
+              Som oplever det problematisk i hverdagen eller føler sig
+              invalideret af sin angst.
+            </li>
+            <li>
+              Eller som oplever at have angst symptomer der gør hverdagen til en
+              udfordring.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5>Og som ønsker:</h5>
+          <ul>
+            <li>At tage styring i dit liv.</li>
+            <li>At forstå hvad der sker når angsten overtager livet.</li>
+            <li>
+              At forstå og se de underliggende mekanismer der går i gang når man
+              oplever et angstanfald.
+            </li>
+            <li>
+              At gøre noget ved din angst gennem nye strategier og
+              handlemuligheder.
+            </li>
+            <li>At gå 360 grader rundt om angsten.</li>
+            <li>At se på din angst som en naturlig medspiller i livet.</li>
+            <li>At angsten er en medspiller, ikke en modspiller.</li>
+            <li>
+              At kunne komme i arbejde, på uddannelse eller forblive på din
+              nuværende uddannelse eller arbejdsplads.
+            </li>
+            <li>At blive ven med sin angst.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <section class="container">
+      <h5 class="text-center">Kurser i kommunikation</h5>
+      <p class="quote">Styrk dialogen – forstå, hvordan den fungerer</p>
+      <br />
+      <p>
+        Får du altid sagt, hvad du vil, eller oplever du, at andre taler hen
+        over hovedet på dig, ignorerer dine pointer eller tror, at de ved, hvad
+        du har brug for? Er der situationer hvor du gerne vil kunne sige
+        nøjagtigt, hvad du mener og stå ved det uden dårlig samvittighed?
+      </p>
+      <br />
+      <p>
+        Jeg tilbyder et kommunikationskursus, som tager fat i nogle af de store
+        og små kommunikationsproblemer, som vi tit støder på i hverdagen. Kurset
+        tager udgangspunkt i de problemstillinger, som du går rundt med.
+        Forløbet veksler mellem teori og øvelser, og du vil få afprøvet, hvordan
+        det er at få sagt præcis det, du gerne vil sige.
+      </p>
+      <br />
+      <p>
+        Kurset har fokus på at give dig redskaber til gennemføre en dialog, hvor
+        du møder din samtalepartner på en ligeværdig måde. Du vil få indblik i
+        metoder til at give og modtage konstruktiv feedback, samtidig med, at du
+        får sagt det, du gerne vil.
+      </p>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="flex-steps">
+        <div>
+          <img src="./img/IntroPsykoIcon.svg" />
+          <h6>Introduktion til psykologisk og pædagogisk værktøj</h6>
+        </div>
+        <svg
+          width="30"
+          height="22"
+          viewBox="0 0 30 22"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18.8475 1.38916L28.4584 11L18.8475 20.6108M1.54169 11H28.1892"
+            stroke="#00045A"
+            stroke-width="1.5"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <div>
+          <img src="./img/BlivBedreIcon.svg" />
+          <h6>
+            Blive bedre <br />
+            til at forstå dig selv
+          </h6>
+        </div>
+        <svg
+          width="30"
+          height="22"
+          viewBox="0 0 30 22"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18.8475 1.38916L28.4584 11L18.8475 20.6108M1.54169 11H28.1892"
+            stroke="#00045A"
+            stroke-width="1.5"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <div>
+          <img src="./img/meeting-alt 1.svg" />
+          <h6>Blive ekspert i “den gode dialog”</h6>
+        </div>
+      </div>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="kontakt-form-container">
+      <div class="kontakt-form">
+        <h2 class="h2">Skriv til mig!</h2>
+        <form>
+          <div class="form-element">
+            <label for="email">Email</label>
+            <input id="email" type="email" />
+          </div>
+          <div class="form-element">
+            <label for="type">Emne</label>
+            <select id="type">
+              <option>Individuel terapi</option>
+              <option>Hypnose</option>
+              <option>NLP</option>
+              <option>Virksomhed</option>
+              <option>Kurser</option>
+              <option>Andet</option>
+            </select>
+          </div>
+          <div class="form-element">
+            <label for="description">Description</label>
+            <textarea id="description" rows="5"></textarea>
+          </div>
+          <button class="btn-secondary kontakt-mig-btn" type="submit">
+            Kontakt mig
+          </button>
+        </form>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Firma Information -->
+        <div class="footer-section" aria-labelledby="firma-info-heading">
+          <h2 id="firma-info-heading">Firmainformation</h2>
+          <p>
+            Tankevirk V/ Hanne Aamand<br />
+            Dronningensvej 7, 1. TH<br />
+            5800 Nyborg<br />
+            Tlf.:
+            <a href="tel:+4527286099" aria-label="Ring til 27 28 60 99"
+              >27 28 60 99</a
+            ><br />
+            E-mail:
+            <a href="mailto:info@tankevirk.dk" aria-label="Send en mail"
+              >Skriv en mail til mig</a
+            >
+          </p>
+        </div>
+
+        <!-- Hurtige Links -->
+        <div class="footer-section" aria-labelledby="hurtige-links-heading">
+          <h2 id="hurtige-links-heading">Hurtige links</h2>
+          <ul>
+            <li><a href="#" aria-label="Coaching">Coaching</a></li>
+            <li>
+              <a href="#" aria-label="Coaching i virksomheder"
+                >Coaching i virksomheder</a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="Det siger kunderne">Det siger kunderne</a>
+            </li>
+            <li><a href="#" aria-label="GDPR">GDPR</a></li>
+            <li><a href="#" aria-label="Kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="footer-section social-media" aria-label="Sociale medier">
+          <a href="#" aria-label="Instagram"
+            ><img src="img/instagram.svg"Instagram"></a
+          >
+          <a href="#" aria-label="Facebook"
+            ><img src="img/facebook.svg" alt="Facebook"
+          /></a>
+          <a href="#" aria-label="LinkedIn"
+            ><img src="img/linkedin.svg" alt="LinkedIn"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

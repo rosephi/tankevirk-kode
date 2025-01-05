@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tankevirk</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/coaching.css" />
+    <link rel="stylesheet" href="css/kontakt.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><img
+              src="./img/cross.svg"
+              height="16"
+              viewbox="0 96 960 960"
+              width="26"
+              alt=""
+          /></a>
+        </li>
+        <li><a href="#">Om Tankevirk</a></li>
+        <li class="dropdown">
+          <a href="/vitilbyder.html" id="sidebarDropdownLink">Vi Tilbyder</a>
+          <ul class="dropdown-menu">
+            <li><a href="/vitilbyder.html#samtale">Samtale</a></li>
+            <li><a href="/vitilbyder.html#psyko">Psykoterapi</a></li>
+            <li><a href="/vitilbyder.html#hypnose">Hypnose</a></li>
+            <li><a href="/coaching.html">Coaching</a></li>
+            <li><a href="/kurser.html">Kurser</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Priser</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+      <ul>
+        <li>
+          <a href="/index.html"
+            ><img src="./img/tankevirk-logo.svg" height="100"
+          /></a>
+        </li>
+        <li class="hideOnMobile"><a href="#">Om Tankevirk</a></li>
+        <li class="active hideOnMobile dropdown">
+          <a href="/vitilbyder.html" id="dropdownLink">Vi Tilbyder</a>
+          <ul class="dropdown-menu">
+            <li><a href="/vitilbyder.html#samtale">Samtale</a></li>
+            <li><a href="/vitilbyder.html#psyko">Psykoterapi</a></li>
+            <li><a href="/vitilbyder.html#hypnose">Hypnose</a></li>
+            <li><a href="/coaching.html">Coaching</a></li>
+            <li><a href="/kurser.html">Kurser</a></li>
+          </ul>
+        </li>
+        <li class="hideOnMobile"><a href="#">Priser</a></li>
+        <li class="hideOnMobile"><a href="/kontakt.html">Kontakt</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><img
+              src="img/menu-burger.svg"
+              height="16"
+              viewbox="0 96 960 960"
+              width="26"
+              alt=""
+          /></a>
+        </li>
+      </ul>
+    </nav>
+    <section class="container">
+      <div class="kurser-header">
+        <h1 class="coaching-title">Hvordan foregår coaching?</h1>
+      </div>
+      <p class="coaching-p">
+        Et coachingforløb udgør mindst tre sessioner. En session er et
+        personligt frirum, hvor du har min fulde opmærksomhed i en tryg og
+        tillidsfuld ramme. Jeg har tavshedspligt.
+      </p>
+      <p class="coaching-p">
+        Den første session tager ca. 2 timer og herefter 1 time pr. session.
+        Derefter kan der aftales enkelte sessioner eller længere forløb, hvis du
+        har brug for det.
+      </p>
+      <br />
+      <br />
+      <br />
+      <br />
+    </section>
+    <section class="steps-section">
+      <div class="container steps-flex">
+        <div>
+          <svg
+            width="136"
+            height="136"
+            viewBox="0 0 136 136"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M42.5 73.6667C37.4566 73.6667 32.5264 72.1711 28.333 69.3692C24.1395 66.5672 20.8711 62.5846 18.9411 57.9251C17.011 53.2656 16.5061 48.1384 17.49 43.1919C18.4739 38.2454 20.9025 33.7017 24.4688 30.1355C28.035 26.5692 32.5787 24.1406 37.5252 23.1567C42.4717 22.1727 47.5989 22.6777 52.2584 24.6078C56.9179 26.5378 60.9005 29.8062 63.7025 33.9996C66.5044 38.1931 68 43.1233 68 48.1667C67.9925 54.9274 65.3035 61.4091 60.5229 66.1896C55.7424 70.9702 49.2607 73.6592 42.5 73.6667ZM79.3333 136H5.66667C4.16377 136 2.72243 135.403 1.65973 134.34C0.597022 133.278 0 131.836 0 130.333V127.5C0 116.228 4.47767 105.418 12.448 97.448C20.4183 89.4777 31.2283 85 42.5 85C53.7717 85 64.5817 89.4777 72.552 97.448C80.5223 105.418 85 116.228 85 127.5V130.333C85 131.836 84.403 133.278 83.3403 134.34C82.2776 135.403 80.8362 136 79.3333 136ZM99.1667 51C94.1232 51 89.1931 49.5045 84.9996 46.7025C80.8062 43.9005 77.5378 39.918 75.6077 35.2584C73.6777 30.5989 73.1727 25.4717 74.1566 20.5252C75.1406 15.5787 77.5692 11.035 81.1354 7.46879C84.7017 3.90255 89.2453 1.47391 94.1919 0.489987C99.1384 -0.493936 104.266 0.0110488 108.925 1.94108C113.585 3.87112 117.567 7.13952 120.369 11.333C123.171 15.5264 124.667 20.4566 124.667 25.5C124.659 32.2607 121.97 38.7424 117.19 43.523C112.409 48.3035 105.927 50.9925 99.1667 51ZM91.1143 62.4523C85.8366 63.1604 80.7619 64.9508 76.2082 67.7113C71.6545 70.4718 67.7199 74.1429 64.651 78.4947C77.3494 84.2614 87.3268 94.7139 92.497 107.667H130.333C131.836 107.667 133.278 107.07 134.34 106.007C135.403 104.944 136 103.503 136 102V101.785C135.994 96.1362 134.783 90.5539 132.449 85.4106C130.114 80.2672 126.708 75.6811 122.46 71.9585C118.212 68.2358 113.218 65.4623 107.813 63.823C102.408 62.1838 96.7147 61.7165 91.1143 62.4523Z"
+              fill="white"
+            />
+          </svg>
+          <h5>Dialog</h5>
+          <p>
+            Vi starter med at udarbejde en kontrakt for vores samarbejde, inden
+            vores første personlige møde. Den første session foregår ansigt til
+            ansigt, så vi kan lære hinanden at kende. Det vigtigste ved vores
+            samarbejde er, at du føler dig tryg, og at vores kemi passer sammen.
+            Derefter kan sessionerne foregå per telefon eller Skype.
+          </p>
+        </div>
+        <div>
+          <svg
+            width="111"
+            height="111"
+            viewBox="0 0 111 111"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M111 13.8747V95.3256L55.5 111.185L0 95.3256V18.4997C0 14.1059 2.01187 10.0683 5.52225 7.42281C6.67387 6.55331 7.94112 5.96131 9.25 5.48956V88.3511L55.5 101.565L101.75 88.3511V0.86456C103.059 1.33631 104.331 1.92831 105.478 2.79781C108.988 5.44331 111 9.48094 111 13.8747ZM60.125 15.5906V81.5569L55.5 82.8797L50.875 81.5569V15.5906C50.875 9.43006 46.7356 3.94019 40.4641 2.16419L32.745 0.31881C25.4791 -1.41557 18.5 4.09743 18.5 11.5668V81.9269L55.5 92.4997L92.5 81.9269V11.7241C92.5 4.33794 85.6689 -1.15657 78.4539 0.42981L70.1844 2.24744C64.2598 3.94019 60.1204 9.43006 60.1204 15.5906H60.125Z"
+              fill="white"
+            />
+          </svg>
+          <h5>Hjemmearbejde</h5>
+          <p>
+            Der vil være noget ”hjemmearbejde” mellem sessionerne, og det kan
+            være en fordel at føre logbog.
+          </p>
+        </div>
+        <div>
+          <svg
+            width="129"
+            height="129"
+            viewBox="0 0 129 129"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M86 14.7813C86 26.4074 70.8425 40.8554 63.2906 46.913C62.1089 47.8604 60.6396 48.3767 59.125 48.3767C57.6104 48.3767 56.1411 47.8604 54.9594 46.913C47.4075 40.85 32.25 26.4074 32.25 14.7813C32.0805 11.0414 33.3991 7.3867 35.9173 4.61662C38.4356 1.84653 41.9485 0.186612 45.6875 0C49.4265 0.186612 52.9394 1.84653 55.4577 4.61662C57.9759 7.3867 59.2945 11.0414 59.125 14.7813C58.9555 11.0414 60.2741 7.3867 62.7923 4.61662C65.3106 1.84653 68.8235 0.186612 72.5625 0C76.3015 0.186612 79.8144 1.84653 82.3326 4.61662C84.8509 7.3867 86.1695 11.0414 86 14.7813ZM125.442 66.3813L84.0542 111.58C79.0153 117.074 72.8885 121.46 66.0632 124.459C59.2379 127.458 51.8634 129.005 44.4082 129H21.5C15.7978 129 10.3292 126.735 6.2972 122.703C2.26517 118.671 0 113.202 0 107.5V80.625C0 74.9229 2.26517 69.4542 6.2972 65.4222C10.3292 61.3902 15.7978 59.125 21.5 59.125H63.3551C65.1319 59.1284 66.8854 59.5289 68.4874 60.2973C70.0894 61.0656 71.4995 62.1822 72.6144 63.5656C73.7293 64.949 74.521 66.5641 74.9314 68.2927C75.3419 70.0214 75.3607 71.82 74.9866 73.5569C74.4047 75.9865 73.094 78.1803 71.2304 79.8442C69.3667 81.508 67.0389 82.5625 64.5591 82.8664L42.183 86C40.7727 86.2023 39.5004 86.9563 38.6457 88.0962C37.7911 89.2361 37.4239 90.6687 37.625 92.0791C37.826 93.4904 38.5794 94.764 39.7195 95.6198C40.8595 96.4756 42.2928 96.8435 43.7041 96.6425L66.5586 93.4175C71.9415 92.6247 76.8623 89.9296 80.4289 85.8206C83.9955 81.7116 85.972 76.4608 86 71.0199C85.9737 69.8694 85.8568 68.7228 85.6506 67.5906L104.689 47.5043C107.199 44.7858 110.684 43.1712 114.381 43.0131C118.078 42.855 121.687 44.1662 124.42 46.6604C127.14 49.1529 128.771 52.6143 128.962 56.2983C129.153 59.9824 127.889 63.594 125.442 66.3544V66.3813Z"
+              fill="white"
+            />
+          </svg>
+          <h5>Afslutning</h5>
+          <p>
+            Ved afslutning af vores coachingsessioner udarbejder vi sammen en
+            konkret handlingsplan og planlægger, hvad du behøver for at
+            fastholde din motivation, så du opnår den succes, du går efter.
+            Efter ca. to måneder, ringer jeg dig op – tidspunktet aftaler vi ved
+            vores sidste session. Opkaldet vil være en opfølgning med feedback
+            på forløbet.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <h2 class="coaching-h2">Hvad kan du opnå?</h2>
+      <ul class="opnaa-ul">
+        <li>Nye mål eller uddybelse af mål</li>
+        <li>Udarbejdelse af værdier/vision</li>
+        <li>Handlingsplaner</li>
+        <li>Nye strategier – måden du vil handle på</li>
+        <li>Nye livsprioriteringer</li>
+        <li>
+          Det vigtigste er, hvad du ønsker, og hvilket mål du har for sessionen.
+        </li>
+      </ul>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </section>
+    <section class="container">
+      <h2>Coaching i virksomheder</h2>
+      <br />
+      <p>Din vigtigste ressource: Medarbejderne.</p>
+      <br />
+      <p>
+        Coaching i virksomheden drejer sig om positiv udvikling af den enkelte
+        medarbejder og om at skabe fælles pejlepunkter for alle i din
+        organisation. Ved at coache den enkelte og de teams, som din stab består
+        af, bliver din organisation ganske enkelt stærkere og mere produktiv.
+        Desuden skaber coaching kompetencer til selvledelse.
+      </p>
+      <br />
+      <p>
+        Medarbejdere, som har virksomhedens mission og vision i baghovedet, er
+        utroligt værdifulde. Er dine medarbejdere samtidig selvbevidste og
+        afklarede om både deres opgaver og værdi for virksomheden, er du rustet
+        med en fantastisk ressource overfor både konkurrenter og
+        samarbejdspartnere.
+      </p>
+      <br />
+      <p>
+        Som coach er jeg broen mellem den enkeltes refleksion og hans eller
+        hendes udvikling, uanset hvilken af nedenstående problematikker, jeg
+        arbejder med.
+      </p>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="two-col-grid container">
+      <div class="circle">
+        <h2>Arbejdsområder</h2>
+      </div>
+      <div>
+        <ul class="omraader-ul">
+          <li>Præcisering af mission og værdier</li>
+          <li>Ledelsesudvikling</li>
+          <li>Medarbejderudvikling</li>
+          <li>Teamudvikling</li>
+          <li>Konflikthåndtering</li>
+          <li>Forandringsarbejde i organisationen</li>
+          <li>Stress/stressforebyggelse</li>
+          <li>Optimering af arbejdsglæde</li>
+        </ul>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="kontakt-form-container">
+      <div class="kontakt-form">
+        <h2 class="h2">Skriv til mig!</h2>
+        <form>
+          <div class="form-element">
+            <label for="email">Email</label>
+            <input id="email" type="email" />
+          </div>
+          <div class="form-element">
+            <label for="type">Emne</label>
+            <select id="type">
+              <option>Individuel terapi</option>
+              <option>Hypnose</option>
+              <option>NLP</option>
+              <option>Virksomhed</option>
+              <option>Kurser</option>
+              <option>Andet</option>
+            </select>
+          </div>
+          <div class="form-element">
+            <label for="description">Description</label>
+            <textarea id="description" rows="5"></textarea>
+          </div>
+          <button class="btn-secondary kontakt-mig-btn" type="submit">
+            Kontakt mig
+          </button>
+        </form>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Firma Information -->
+        <div class="footer-section" aria-labelledby="firma-info-heading">
+          <h2 id="firma-info-heading">Firmainformation</h2>
+          <p>
+            Tankevirk V/ Hanne Aamand<br />
+            Dronningensvej 7, 1. TH<br />
+            5800 Nyborg<br />
+            Tlf.:
+            <a href="tel:+4527286099" aria-label="Ring til 27 28 60 99"
+              >27 28 60 99</a
+            ><br />
+            E-mail:
+            <a href="mailto:info@tankevirk.dk" aria-label="Send en mail"
+              >Skriv en mail til mig</a
+            >
+          </p>
+        </div>
+
+        <!-- Hurtige Links -->
+        <div class="footer-section" aria-labelledby="hurtige-links-heading">
+          <h2 id="hurtige-links-heading">Hurtige links</h2>
+          <ul>
+            <li><a href="#" aria-label="Coaching">Coaching</a></li>
+            <li>
+              <a href="#" aria-label="Coaching i virksomheder"
+                >Coaching i virksomheder</a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="Det siger kunderne">Det siger kunderne</a>
+            </li>
+            <li><a href="#" aria-label="GDPR">GDPR</a></li>
+            <li><a href="#" aria-label="Kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="footer-section social-media" aria-label="Sociale medier">
+          <a href="#" aria-label="Instagram"
+            ><img src="img/instagram.svg"Instagram"></a
+          >
+          <a href="#" aria-label="Facebook"
+            ><img src="img/facebook.svg" alt="Facebook"
+          /></a>
+          <a href="#" aria-label="LinkedIn"
+            ><img src="img/linkedin.svg" alt="LinkedIn"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

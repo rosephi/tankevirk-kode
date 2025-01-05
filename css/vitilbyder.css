@@ -1,0 +1,143 @@
+.vi-tilbyder-section {
+  display: flex;
+  padding-top: 100px;
+  align-items: center;
+  min-height: 80vh;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 800px;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.vi-tilbyder-hero-title {
+  font-size: 64px;
+}
+
+.vi-tilbyder-description {
+  font-size: 20px;
+  line-height: 28px;
+  max-width: 700px;
+}
+
+.samtale-section {
+  background-color: #5a84d0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.nlp-section {
+  background-color: rgba(248, 247, 247, 80%);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.hypnose-section {
+  background-color: #b55b4b;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.coaching-section {
+  background-color: transparent;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.hypnose-grid {
+  background-color: white;
+  padding: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 60px;
+}
+
+.menu {
+  background-color: white;
+  height: auto;
+  align-self: first baseline;
+  padding: 42px 28px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  /* position: sticky; */
+  /* top: 30px; */
+}
+
+.menu h5 {
+  text-transform: uppercase;
+}
+
+.menu a,
+h5 {
+  margin-bottom: 8px;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+.samtale-info {
+  display: flex;
+  gap: 24px;
+}
+
+#samtale {
+  margin-bottom: 14px;
+}
+
+.grid-right {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 18px;
+}
+
+.samtale.grid-right h2,
+.samtale.grid-right p,
+.samtale.grid-right li,
+.samtale.grid-right h5 {
+  color: white;
+}
+
+.samtale.grid-right li {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+.coaching-buttons {
+  display: flex;
+  gap: 24px;
+}
+
+@media screen and (max-width: 600px) {
+  .vi-tilbyder-section {
+    padding-top: 30px;
+  }
+  .grid-left {
+    display: none;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 0 30px;
+  }
+}
